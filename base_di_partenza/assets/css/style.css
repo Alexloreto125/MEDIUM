@@ -1,28 +1,27 @@
 /* !INIZIO HEADER */
 /* !INIZIO NAVBAR*/
-
-header {
+body {
+  margin: 0;
   position: relative;
+}
+header {
   background-color: #ffc017;
   width: 100%;
-  z-index: 1;
 }
 /* *NON FUNZIONA CORRETTAMENTE LO STICKY */
 nav {
+  display: flex;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 64px;
   z-index: 10000;
-  align-self: flex-start;
+  background-color: #ffc017;
+  justify-content: space-between;
+  padding: 0px 20%;
+}
+#nav-bar {
+  transition: background-color 300ms ease;
 }
 
-header hr {
-  border: none;
-  border-top: 1px solid #000;
-  margin: 0;
-}
 nav ul {
   list-style: none;
   display: flex;
@@ -40,6 +39,7 @@ nav ul li {
   box-sizing: border-box;
   cursor: pointer;
   margin-right: 0;
+  transition: background-color 300ms ease;
 }
 nav ul li a {
   cursor: pointer;
@@ -95,10 +95,7 @@ header div div p {
 /* !FINITO HEADER */
 
 /* !INIZIO MAIN */
-main {
-  position: relative;
-  z-index: 2;
-}
+
 /* !INIZIO SECTION */
 section {
   width: 90%;

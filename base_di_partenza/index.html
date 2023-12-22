@@ -10,19 +10,17 @@
   </head>
 
   <body>
+    <nav id="nav-bar">
+      <img src="./assets/imgs/svg/logo.svg" alt="logo" />
+      <ul>
+        <li><a>Our Story</a></li>
+        <li><a>Membership</a></li>
+        <li><a>Write</a></li>
+        <li><a>Sign in</a></li>
+        <li class="started-btn"><a>Get Started</a></li>
+      </ul>
+    </nav>
     <header>
-      <nav>
-        <img src="./assets/imgs/svg/logo.svg" alt="logo" />
-        <ul>
-          <li><a>Our Story</a></li>
-          <li><a>Membership</a></li>
-          <li><a>Write</a></li>
-          <li><a>Sign in</a></li>
-          <li class="started-btn"><a>Get Started</a></li>
-        </ul>
-      </nav>
-      <hr />
-
       <div>
         <div>
           <h1>Stay curious.</h1>
@@ -9561,5 +9559,29 @@
         </div> -->
       </article>
     </main>
+    <script>
+      function miaFunzioneDuranteScroll() {
+        const button = document.getElementsByClassName("started-btn");
+
+        const nav = document.getElementById("nav-bar");
+        // Codice da eseguire durante lo scrolling
+        const yCoordinate = window.scrollY || window.pageYOffset;
+        console.log("Coordinate Y:", yCoordinate);
+
+        if (yCoordinate >= 633) {
+          nav.style.backgroundColor = "rgb(255, 255, 255)";
+          button.style.backgroundColor = "rgb(26, 137, 23)";
+        } else {
+          // Reimposta il colore di sfondo se la posizione di scorrimento è inferiore a 633
+          nav.style.backgroundColor = "";
+          button.style.backgroundColor = ""; // Utilizza il colore predefinito o il CSS specificato
+        }
+
+        // Aggiungi qui le istruzioni per la tua logica durante lo scrolling
+      }
+
+      // Aggiungi un listener per l'evento scroll
+      window.addEventListener("scroll", miaFunzioneDuranteScroll);
+    </script>
   </body>
 </html>
