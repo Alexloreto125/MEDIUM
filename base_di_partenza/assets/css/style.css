@@ -17,6 +17,7 @@ nav {
   background-color: #ffc017;
   justify-content: space-between;
   padding: 0px 20%;
+  border-bottom: 1px solid black;
 }
 #nav-bar {
   transition: background-color 300ms ease;
