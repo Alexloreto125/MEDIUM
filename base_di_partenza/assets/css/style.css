@@ -249,9 +249,17 @@ article {
   display: flex;
 }
 .articleImages {
-  width: 200px;
   height: 100px;
   align-items: center;
+}
+.article-1 > div,
+.article-2 > div,
+.article-3 > div,
+.article-4 > div,
+.article-5 > div,
+.article-6 > div,
+.article-7 > div {
+  width: 100%;
 }
 
 /* .info a {
